@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`  bg-gradient-to-b from-yellow-100 via-pink-100 to-blue-100 min-h-screen ` }
+        className="background"
       >
         <Header/>
         {children}
