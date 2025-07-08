@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 export const Main = () => {
   return (
    <>
-       <div className="w-[80%] max-w-[100%] mx-auto flex justify-between items-center container max-md:justify-center max-md:text-center flex-wrap   ">
+       <div className="w-[90%] max-w-[100%] mx-auto flex justify-between items-center container max-md:justify-center max-md:text-center flex-wrap  max-xl:justify-center max-xl:text-center  ">
        
        <motion.div initial={{ opacity: 0, y: -30 }}
            animate={{ opacity: 1, y: 0 }}
@@ -21,11 +21,13 @@ export const Main = () => {
    </motion.div>
         <motion.div   initial={{ opacity: 0, y: -30 }}
            animate={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.6, delay: 0.3 }} className="p-5 text-3xl font-bold text-white">
+           transition={{ duration: 0.6, delay: 0.3 }} className="p-5 max-md:p-0 max-md:text-xl text-3xl font-bold text-white">
    <h1 className="p-3"> Welcome to Our Restaurant</h1>
    <p className="p-3">Where Every Bite Makes a Difference!</p>
+   <div className='max-md:flex space-x-1.5  flex-wrap  justify-evenly '>
    <Link className="my-5 block border-2 p-3 rounded-2xl hover:bg-[#FF7A04] duration-150 hover:scale-105" href="/meals">Explore Our Meals</Link>
    <Link className="my-5 block border-2 p-3 rounded-2xl hover:bg-[#FF7A04] duration-150 hover:scale-105" href="/community">Join To Community</Link>
+   </div>
         </motion.div>
     
    

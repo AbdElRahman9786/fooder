@@ -6,7 +6,7 @@ export const Header = () => {
   return (
   
 
-<nav className="bg-transparent w-[80%] mx-auto sticky top-3 border-gray-200 shadow-2xl rounded-2xl">
+<nav className="bg-[#ffc08b] z-10 w-[80%] mx-auto sticky top-3 border-gray-200 shadow-2xl rounded-2xl">
    
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 container">
     <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
