@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 export const Section = () => {
    
   return (
-    <div className='bg-[#F47200] flex justify-evenly items-center my-40 text-white font-bold flex-wrap'>
+    <div className='bg-[#F47200] flex justify-evenly items-center my-40 text-white font-bold flex-wrap p-10'>
          <div>
             <p className='text-lg'>Get Up To</p>
             <p className='text-3xl'>50% OFF</p>
