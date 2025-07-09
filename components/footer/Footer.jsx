@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import img from '../../app/images/burger 2.svg'
+
 
 export const Footer = () => {
   return (

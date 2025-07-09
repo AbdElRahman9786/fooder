@@ -1,12 +1,39 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export const Mealsall = ({meals}) => {
   return (
-       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      //  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <Swiper
+    modules={[Autoplay]}
+      autoplay={{
+        delay: 2000, // delay in ms
+        disableOnInteraction: true, // keep auto-scroll even after user interacts
+      }}
+      spaceBetween={30}
+      slidesPerView={3}
+      loop={true}
+        breakpoints={{
+    0: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  }} // to keep looping
+    >
         {meals.map((meal) => (
-         <div
+         <SwiperSlide
   key={meal.slug}
   className="bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300"
 >
@@ -48,9 +75,9 @@ export const Mealsall = ({meals}) => {
       Show Details
     </Link>
   </div>
-</div>
+</SwiperSlide>
 
         ))}
-      </div>
+      </Swiper>
   )
 }

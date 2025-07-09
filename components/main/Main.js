@@ -25,7 +25,7 @@ export const Main = () => {
    <h1 className="p-3"> Welcome to Our Restaurant</h1>
    <p className="p-3">Where Every Bite Makes a Difference!</p>
    <div className='max-md:flex space-x-1.5  flex-wrap  justify-evenly '>
-   <Link className="my-5 block border-2 p-3 rounded-2xl hover:bg-[#FF7A04] duration-150 hover:scale-105" href="/meals">Explore Our Meals</Link>
+   <Link className="my-5 block border-2 p-3 rounded-2xl hover:bg-[#FF7A04] duration-150 hover:scale-105" href="/meals/share">share your Meals</Link>
    <Link className="my-5 block border-2 p-3 rounded-2xl hover:bg-[#FF7A04] duration-150 hover:scale-105" href="/community">Join To Community</Link>
    </div>
         </motion.div>
